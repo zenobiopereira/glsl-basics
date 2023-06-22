@@ -1,0 +1,53 @@
+html, body {
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.hero {
+    width: 100%;
+    height: inherit;
+}
+
+.grid {
+    display: grid;
+    grid-template: 
+        "scene1 scene2"
+        "scene3 scene4";
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.scene_container1 {
+    grid-area: scene1;
+}
+
+.scene_container2 {
+    grid-area: scene2;
+}
+
+.scene_container3 {
+    grid-area: scene3;
+}
+
+.scene_container4 {
+    grid-area: scene4;
+}
+
+.border {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(204, 204, 204);
+    border-image: initial;
+}
+
+.fit_screen {
+    max-height: 50vh;
+    max-width: 50vw;
+}
