@@ -1,35 +1,3 @@
-// vec3 vec = vec3(1.0, 1.0, 1.0);
-// Swizzling means, handle multiple values at once. (Doesn't need to be in the same order)
-// E.g; vec.xy = vec2(0.3, 0.5) ==> vec3(0.3, 0.5, 1.0)
-// E.g; vec.zxy = vec3(0.3, 0.5, 0.1) ==> vec3(0.5, 0.1, 0.3)
-// E.g; vec4(vec.xxx, 0.3) ==> vec4(1.0, 1.0, 1.0, 0.3)
-
-// vec3 vec = vec3(1.0, 1.0, 1.0);
-// Matrix operations, apply the given operation to the given "coordinates".
-// Works for all (?) arithmetical operations.
-// E.g; vec -= vec2(1.0) ==> vec3(0.0, 0.0, 1.0)
-// E.g; vec += vec2(0.2, 0.5)
-
-// Some basic functions;
-// (equal); Return a bvec3 (boolean vec3) in which the values are the result of comparison of 2 given vectors a.x != b.x and so on...
-// min
-// max
-// abs
-// mod
-// sign
-// cos
-// atan
-// tan
-// sqrt
-// dot : vec1.x * vec2.x + vec1.y * vec2.y.
-// cross
-// champ
-// mix (lerp)
-// length : Give back the calculated size of a vector.
-// smoothstep : Same as step but keeps values in-between given bounds.
-// step : Create a bridge between two values where any value bigger turns into the max bound of this function.
-// fract : Give back the fractionary part of a number.
-
 uniform float uRadius;
 
 varying vec3 vPosition; // Value provided by Three.js
