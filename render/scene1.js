@@ -27,7 +27,7 @@ export default function scene() {
     scene.add(dirLight, ambientLight)
 
     // MESHES
-    const geometry = new THREE.IcosahedronGeometry(1, 5)
+    const geometry = new THREE.PlaneGeometry(1, 1)
     const material = new THREE.ShaderMaterial({
         vertexShader: shadersS1.vertex,
         fragmentShader: shadersS1.fragment,
@@ -69,10 +69,9 @@ export default function scene() {
         elem,
         mesh,
         ...sceneProps,
-        renderFn: (time) => {
+        renderFn: () => {
             const renderer = useRenderer();
 
-            mesh.rotation.y = time * .5;
             camera.aspect = width / height;
             camera.updateProjectionMatrix();
             controls.handleResize();

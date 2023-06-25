@@ -1,6 +1,6 @@
 const SCENE_1 = [
     './shaders/scene1/vertex.glsl',
-    './shaders/scene1/fragment.glsl'
+    './shaders/scene1/fragment.glsl',
 ];
 
 async function loadAsText(url) {

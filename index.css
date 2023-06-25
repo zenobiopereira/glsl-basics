@@ -24,19 +24,19 @@ canvas {
     grid-template-columns: repeat(2, 1fr);
 }
 
-.scene_container1 {
+.container1 {
     grid-area: scene1;
 }
 
-.scene_container2 {
+.container2 {
     grid-area: scene2;
 }
 
-.scene_container3 {
+.container3 {
     grid-area: scene3;
 }
 
-.scene_container4 {
+.container4 {
     grid-area: scene4;
 }
 

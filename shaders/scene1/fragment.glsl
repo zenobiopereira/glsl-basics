@@ -45,6 +45,6 @@ void main() {
     // vec4(vec3(abs(vUv.y - 0.5)), 1.0); // Transforming negative coordinates in positive.
     // vec4(vec3(step(1.0 - abs(vUv.y - 0.5), 0.99)), 1.0); // Making a step interval which will only be 0 when the vUv it's mostly in the middle. E.g; 1.0 - 0 -> 1 > .99 ? 0 : 1;
     
-    //vec3 line = vec3(step(1.0 - abs(vUv.y - 0.5), 0.98));
-    gl_FragColor = vec4(vec3(.5), 1.0);
+    vec3 line = vec3(step(1.0 - abs(vUv.y - 0.5), 0.98));
+    gl_FragColor = vec4(line, 1.0);
 }

@@ -31,7 +31,7 @@ function renderScenes(scenes) {
             renderer.setScissor(0, 0, width, height);
             renderer.setViewport(0, 0, width, height);
 
-            renderFn(time, rect);
+            renderFn(time);
 
             // copy the rendered scene to this element's canvas
             ctx.globalCompositeOperation = 'copy';
